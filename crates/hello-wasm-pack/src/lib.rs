@@ -11,3 +11,9 @@ extern "C" {
 pub fn greet() {
     alert("Hello, hello-wasm-pack!");
 }
+
+#[wasm_bindgen]
+pub fn todo() {
+    utils::set_panic_hook();
+    todo!();
+}
