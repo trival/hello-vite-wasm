@@ -1,6 +1,12 @@
 node_modules
 .DS_Store
+
+# vite ignores
 dist
 dist-ssr
 *.local
+
+# rust ignores
 target
+*.log
+**/*.rs.bk

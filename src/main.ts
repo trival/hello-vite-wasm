@@ -1,5 +1,6 @@
 import './style.css'
 import init, {hello} from '../crates/hello-wasm/pkg/hello_wasm'
+import init2, {greet} from '../crates/hello-wasm-pack/pkg/hello_wasm_pack'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
@@ -12,3 +13,6 @@ init().then(() => {
   hello('RUST WASM :)')
 })
 
+init2().then(() => {
+  greet()
+})
